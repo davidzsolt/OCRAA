@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OCRAA</string>
+    <!-- Buttons -->
+    <string name="button_search">Search</string>
+    <string name="button_update">Update</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_back">Back</string>
+    <string name="button_download">Download</string>
+    <string name="button_stream">Stream</string>
+    <!-- Spinner tags -->
+    <string name="spinner_Title">Title</string>
+    <string name="spinner_Artist">Artist</string>
+    <string name="spinner_game">Game</string>
+    <string name="spinner_original">Original</string>
+    <string name="spinner_description">Description</string>
+    <string name="results">Search Results:</string>
+    <string name="tab_2">MusicPlayer</string>
+    <string name="prevSign">[--</string>
+    <string name="nextSign">--]</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_player_tab">PlayerTabActivity</string>
+	<!-- Player tab: -->
+    <string name="Previous">Previous</string>
+    <string name="PlayPause">Play</string>
+    <string name="Next">Next</string>
+     <string name="AddPlaylist">Add to playlist</string>
+     <string name="RemovePlaylist">Remove from playlist</string>
+    
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="about">About this app/Credits</string>
+    <string name ="playlist">Playlist</string>
+    <string name ="chosen">ReMix details</string>
+    <string-array name="search_options">
+        <item>Search in: ReMix title</item>
+        <item>Search in: Artist</item>
+        <item>Search in: Game</item>
+        <item>Search in: Original music title</item>
+        <item>Search in: Description by djp</item>
+        </string-array>
+    <string name ="aboutFragment">This app brought to you by: Geryon !</string>
+    
+    
+</resources>

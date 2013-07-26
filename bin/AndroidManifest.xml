@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geryon.ocraa"
+   
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="OCRAA"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity android:name="com.geryon.ocraa.SettingsActivity" 
+              android:label="@string/menu_settings" />
+           <activity android:name="com.geryon.ocraa.AboutActivity" 
+               android:label="@string/about" />
+           <activity android:name="com.geryon.ocraa.DirectoryPicker" 
+               android:label="@string/about" />
+        <activity android:name="com.geryon.ocraa.SearchResultActivity"
+            android:label="@string/results"/> 
+            <activity android:name="com.geryon.ocraa.PlayListActivity"
+            android:label="@string/playlist">
+             </activity>
+             <activity android:name="com.geryon.ocraa.SearchSubActivity"
+            android:label="@string/results"/>
+<service android:exported="false" android:name=".MusicService">
+            <intent-filter>
+                <action android:name="com.geryon.OCRAA.musicplayer.action.TOGGLE_PLAYBACK" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.PLAY" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.PAUSE" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.SKIP" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.REWIND" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.STOP" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.SEEKTO" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.NAME" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.URL" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.REPEAT" />
+                <action android:name="com.geryon.OCRAA.musicplayer.action.SHUFFLE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".MusicIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+                
+        </application>
+</manifest>
